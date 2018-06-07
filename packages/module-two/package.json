@@ -1,6 +1,6 @@
 {
-  "name": "module-two",
-  "version": "1.0.2",
+  "name": "module-two-tss",
+  "version": "1.0.6",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -8,8 +8,5 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "module-one": "^1.0.2"
-  }
+  "license": "ISC"
 }
