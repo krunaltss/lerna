@@ -1,0 +1,72 @@
+0 silly input [ 'publish' ]
+1 silly flags { _: [ 'publish' ], 'reject-cycles': false, rejectCycles: false }
+2 verbose rootPath C:\Users\admin\Desktop\Lerna\lerna-github
+3 info version 2.11.0
+4 silly isInitialized
+5 silly isInitialized true
+6 silly existsSync C:\Users\admin\Desktop\Lerna\lerna-github\VERSION
+7 silly initialize attempt
+8 info current version 1.0.2
+9 silly isDetachedHead
+10 silly getCurrentBranch
+11 verbose getCurrentBranch master
+12 verbose isDetachedHead false
+13 silly getCurrentBranch
+14 verbose getCurrentBranch master
+15 silly getUpdates
+16 info Checking for updated packages...
+17 silly hasTags
+18 verbose hasTags true
+19 silly getLastTag
+20 verbose getLastTag v1.0.2
+21 info Comparing with v1.0.2.
+22 silly diffSinceIn v1.0.2 packages/import-module
+23 silly diff packages/import-module/node_modules/module-one/package.json
+23 silly diff packages/import-module/node_modules/module-two/package.json
+24 silly diffSinceIn v1.0.2 packages/module-one
+25 silly diff
+26 silly diffSinceIn v1.0.2 packages/module-two
+27 silly diff
+28 verbose updated import-module
+29 info Checking for prereleased packages...
+30 silly collectDependents
+31 silly isPackageDependentOf import-module import-module
+32 silly isPackageDependentOf module-one import-module
+33 silly isPackageDependentOf module-two import-module
+34 silly isPackageDependentOf module-one import-module
+35 silly isPackageDependentOf module-one import-module
+36 silly isPackageDependentOf module-two import-module
+37 silly collectUpdates
+38 verbose has filtered update import-module
+39 silly initialize success
+40 silly execute attempt
+41 silly addFile C:\Users\admin\Desktop\Lerna\lerna-github\lerna.json
+42 silly runScriptSync preversion undefined
+43 silly runScriptSync preversion import-module
+44 silly runScriptSync version import-module
+45 silly runScriptSync version undefined
+46 silly addFile C:\Users\admin\Desktop\Lerna\lerna-github\packages\import-module\package.json
+47 silly commit v1.0.2
+48 verbose commit [ 'commit', '--no-verify', '-m', 'v1.0.2' ]
+49 error execute caught error
+50 error Error: On branch master
+50 error Your branch is ahead of 'origin/master' by 2 commits.
+50 error   (use "git push" to publish your local commits)
+50 error
+50 error Changes not staged for commit:
+50 error 	modified:   packages/import-module/node_modules/module-one/package.json
+50 error 	modified:   packages/import-module/node_modules/module-two/package.json
+50 error
+50 error Untracked files:
+50 error 	lerna-debug.log
+50 error 	packages/import-module/node_modules/module-two/node_modules/
+50 error 	packages/module-two/node_modules/
+50 error
+50 error no changes added to commit
+50 error
+50 error     at Function.module.exports.sync (C:\Users\admin\AppData\Roaming\npm\node_modules\lerna\node_modules\execa\index.js:303:26)
+50 error     at Function.execSync (C:\Users\admin\AppData\Roaming\npm\node_modules\lerna\lib\ChildProcessUtilities.js:59:30)
+50 error     at Function.commit (C:\Users\admin\AppData\Roaming\npm\node_modules\lerna\lib\GitUtilities.js:94:39)
+50 error     at PublishCommand.gitCommitAndTagVersion (C:\Users\admin\AppData\Roaming\npm\node_modules\lerna\lib\commands\PublishCommand.js:778:30)
+50 error     at PublishCommand.commitAndTagUpdates (C:\Users\admin\AppData\Roaming\npm\node_modules\lerna\lib\commands\PublishCommand.js:740:27)
+50 error     at PublishCommand.execute (C:\Users\admin\AppData\Roaming\npm\node_modules\lerna\lib\commands\PublishCommand.js:329:14)
